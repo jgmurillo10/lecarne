@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import request from 'superagent';
 import './App.css';
+import Template from './Template.jsx';
 class Form extends Component{
 
   constructor(props){
@@ -47,38 +48,17 @@ class Form extends Component{
     return (
       <div>
         <form onSubmit={(e)=>this.onSubmit(e)}>
-          <div>
-            <h2>Selecciona un template</h2>
-            <div className="row">
-              <div className="col-md-4">
-                <img src="http://placehold.it/300x200"></img>
-              </div>
-              <div className="col-md-4">
-                <img src="http://placehold.it/300x200"></img>
-              </div>
-              <div className="col-md-4">
-                <img src="http://placehold.it/300x200"></img>
-              </div>
-            </div>
-            <br></br>
-            <div className="row">
-              <div className="col-md-4">
-                <img src="http://placehold.it/300x200"></img>
-              </div>
-              <div className="col-md-4">
-                <img src="http://placehold.it/300x200"></img>
-              </div>
-              <div className="col-md-4">
-                <img src="http://placehold.it/300x200"></img>
-              </div>
-            </div>
-          </div>
+          <hr className="style18"></hr>
+          <Template/>
+          <hr className="style18"></hr>
+
           <div>
             <h2>Selecciona una imagen</h2>
             <input type="file" name="image-file" onChange={(e)=>this.onFileSelect(e)} />
           </div>
 
           <input type="submit" name="submit"  onClick={(e)=>this.onSubmit(e)} />
+          <hr className="style19"></hr>
         </form>
       </div>
     );
