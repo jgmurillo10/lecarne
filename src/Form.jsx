@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import request from 'superagent';
 import './App.css';
 import Template from './Template.jsx';
+import Fields from './Fields.jsx'
 class Form extends Component{
 
   constructor(props){
@@ -51,7 +52,8 @@ class Form extends Component{
           <hr className="style18"></hr>
           <Template/>
           <hr className="style18"></hr>
-
+          <Fields/>
+          <hr className="style18"></hr>
           <div>
             <h2>Selecciona una imagen</h2>
             <input type="file" name="image-file" onChange={(e)=>this.onFileSelect(e)} />

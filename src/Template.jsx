@@ -35,7 +35,7 @@ class Template extends Component{
 
           <hr></hr>
           <div className="">
-            <h2>Ó puedes personalizar tus medidas</h2>
+            <h3>Ó puedes personalizar tus medidas</h3>
             <div>
               <div className="form-group row">
                 <label className="control-label col-sm-2" htmlFor="nombre">Ancho:</label>
