@@ -58,9 +58,8 @@ class Form extends Component{
             <h2>Selecciona una imagen</h2>
             <input type="file" name="image-file" onChange={(e)=>this.onFileSelect(e)} />
           </div>
-
-          <input type="submit" name="submit"  onClick={(e)=>this.onSubmit(e)} />
           <hr className="style19"></hr>
+          <button> Cargar </button>
         </form>
       </div>
     );
